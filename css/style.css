@@ -1,0 +1,44 @@
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px; /* เพิ่มขนาดตัวอักษรให้ใหญ่ขึ้นบนมือถือ */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.container {
+    width: 90%; /* กำหนดความกว้างของคอนเทนเนอร์ให้เป็น 90% เพื่อให้ไม่ครอบทับบนมือถือ */
+    max-width: 500px; /* กำหนดความกว้างสูงสุดของคอนเทนเนอร์ */
+    margin: auto; /* จัดการระยะห่างรอบคอนเทนเนอร์เพื่อให้กลางแนวบนมือถือ */
+}
+
+.heart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px; /* เพิ่มระยะห่างด้านบนของ container สำหรับคอนเทนเนอร์ */
+}
+
+#message-container {
+    background-color: plum;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.455);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    transition: height 1.5s ease;
+    width: 100%; /* ทำให้คอนเทนเนอร์เต็มขนาดเมื่อแสดงบนมือถือ */
+}
+
+#message {
+    width: 100%; /* ทำให้ข้อความเต็มขนาดเมื่อแสดงบนมือถือ */
+    padding: 15px;
+    box-sizing: border-box; /* ปรับเพื่อให้ข้อความแสดงตรงกลางแนวด้วย padding */
+}
+video {
+    max-width: 100%; /* ความกว้างสูงสุดไม่เกินขนาดของพื้นที่ที่วิดีโอเริ่มต้น */
+    height: auto; /* ความสูงจะถูกปรับอัตโนมัติเพื่อรักษาสัดส่วนของวิดีโอ */
+}
